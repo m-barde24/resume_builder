@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Digital Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #F84C84;font-family: 'Lusitana', serif">Your Digital Canvas</h1>
+        <form id="resumeForm">
+            <label for="name">A Name that Echoes:</label>
+            <input type="text" id="name" placeholder="Enter your Full Name(First Name,Middle Name,Last Name)"><br>
+
+            <fieldset>
+                <legend>Education, a Path Unveiled:</legend>
+                <label for="tenth">Percentage in 10th Grade:</label>
+                <input type="text" id="tenth" placeholder="Add your Percentage" required><br>
+
+                <label for="twelfth">Percentage in 12th Grade:</label>
+                <input type="text" id="twelfth" placeholder="Add your Percentage" required><br>
+
+                <label for="graduation">Percenatge in Graduation:</label>
+                <input type="text" id="graduation" placeholder="Add your Grand Total Percenatge" required><br>
+
+                <label for="postGraduation"> Percentage in Post Graduation:</label>
+                <input type="text" id="postGraduation" placeholder="Add your Grand Total Percenatge"><br>
+
+                <label for="stream">12th Grade Stream:</label>
+                <select id="stream" required>
+                    <option value="science">Science</option>
+                    <option value="commerce">Commerce</option>
+                    <option value="arts">Arts</option>
+                </select><br>
+
+                <label for="gradBranch">Graduation Branch:</label>
+                <input type="text" id="gradBranch" placeholder="Add your Graduation Branch " required><br>
+
+                <label for="postGradBranch">Post Graduation Branch:</label>
+                <input type="text" id="postGradBranch" placeholder="Add your Post Graduation Branch"><br>
+
+                <label for="certifications">Certifications/Diplomas:</label>
+                <textarea id="certifications" required></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience(*If you have industry Experience):</legend>
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" placeholder="Position" ><br>
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" placeholder="Name of the Company" ><br>
+
+                <label for="employmentDates">Dates of Employment:</label>
+                <input type="text" id="employmentDates" placeholder="DD/MM/YYYY"><br>
+
+                <label for="jobResponsibilities">Job Responsibilities:</label>
+                <textarea id="jobResponsibilities" placeholder="Your Assigned Responsibilities"></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Projects and Achievements:</legend>
+                <label for="projects">Projects/Research Work:</label>
+                <textarea id="projects" placeholder="Project Title and Description/Research Title and Description"></textarea><br>
+
+                <label for="achievements">Notable Achievements:</label>
+                <textarea id="achievements" placeholder="Curricular and Non-Curricular Achievements"></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>References:</legend>
+                <label for="refName">Reference Name:</label>
+                <input type="text" id="refName" placeholder="Enter Full Name(First Name,Middle Name,Last Name)"><br>
+
+                <label for="refContact">Reference Contact:</label>
+                <input type="text" id="refContact" pattern="[0-9]{10}" placeholder="Enter Valid Mobile Number"><br>
+            </fieldset>
+
+            <label for="address">An Address, a Dwelling Divine:</label>
+            <input type="text" id="address" placeholder="Give Specific Address Details" required><br>
+
+            <label for="mobile">Mobile, a Beacon of Connectivity:</label>
+            <input type="tel" id="mobile" pattern="[0-9]{10}" placeholder="Enter Valid Mobile Number" required><br>
+
+            <label for="email">Email, a Gateway to Reach:</label>
+            <input type="email" id="email" placeholder="Enter a valid Email" required><br>
+
+            <label for="languages">Languages Spoken:</label>
+            <input type="text" id="languages" placeholder="Languages"><br>
+
+            <label for="skills">Skills, Gifts to Shine:</label>
+            <textarea id="skills" placeholder="Skills"></textarea><br>
+
+            <label for="socialMedia">Social Media Links:</label>
+            <input type="text" id="socialMedia" placeholder="Enter the linkedIn and Github Links" required><br>
+
+            <label for="fileUpload">Upload Additional Documents:</label>
+            <input type="file" id="fileUpload" accept=".pdf,.doc,.docx"><br><br>
+
+            <label for="photo">Photograph,Your Essence in Time: </label>
+            <input type="file" id="photo" accept="image/*" required><br><br>
+
+            <button type="submit">Etch Your Saga</button>
+        </form>
+
+        <div id="resumeOutput" class="hidden">
+            <!-- Your tale unfolds here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

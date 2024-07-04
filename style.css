@@ -1,0 +1,126 @@
+/* External CSS */
+body {
+    font-family: "Crimson Pro", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('body_Background.jpeg');
+    /*background-size: contain;*/
+    background-position: center;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: url('container_Background.jpeg');
+}
+
+/* Form Styles */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CA1F8;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #C64CF8;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #FC8F06;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F1FC06;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Output Styles */
+#resumeOutput {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fcfdc1;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px #ec6847;
+    
+}
+
+#resumeOutput h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #f8b435;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+#resumeOutput p {
+    margin-bottom: 10px 0;
+    color: #f68270;
+    font-family: 'Marko One', serif;
+}
+.photo {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #F84C84; /* Border color */
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Adjust the position as needed */
+    background-size: cover;
+    background-position: center;
+}
+
